@@ -8,25 +8,19 @@
  */
 int main(void)
 {
-        char ch = 'a';
+	char ch = 'a';
+	char ch2 = 'A';
 
-        while (ch <= 'Z' || ch <= 'z')
-        {
-                putchar(ch);
-                if (ch == 'z')
-		{
-			ch = 'A';
-		}
-		else if (ch == 'Z')
-		{
-			break;
-		}
-		else
-		{
-			ch++;
-		}
-        }
-	putchar('$');
-        putchar('\n');
-        return (0);
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+	while (ch2 <= 'Z')
+	{
+		putchar(ch2);
+		ch2++;
+	}
+	putchar('\n');
+	return (0);
 }
