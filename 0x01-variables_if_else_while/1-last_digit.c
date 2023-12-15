@@ -9,14 +9,12 @@
  */
 int main(void)
 {
-	int n, last;
-	char char_n, char_last_digit;
+	int n;
+	int last;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char_n = char(n);
-	char_last_digit = char_n[-1];
-	last = int(char_last_digit);
+	last = n % 10;
 	if (last > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, last);
@@ -25,7 +23,7 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, last);
 	}
-	else if (last < 6)
+	else
 	{
 		printf("Last digit of %d is %d and is less than 6 and is not 0\n", n, last);
 	}
