@@ -3,17 +3,17 @@
 /**
  * _isdigit - Entry point
  *
- *@c: number to check
+ * @c: number to check
  * Return: 0 or 1
  */
 int _isdigit(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if (c >= '0' && c <= '9')
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }
