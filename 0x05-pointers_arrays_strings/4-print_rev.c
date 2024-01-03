@@ -28,6 +28,6 @@ void print_rev(char *s)
 			s--;
 		}
 		_putchar(*tmp);
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
