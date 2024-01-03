@@ -18,7 +18,7 @@ void print_rev(char *s)
 	s--;
 	if (*tmp == '\0')
 	{
-		_putchar(*tmp);
+		_putchar('\0');
 		_putchar('\n');
 	}
 	else
